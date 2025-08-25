@@ -177,39 +177,39 @@ body {
 
 /* kemeja dan lainnya */
 
-/* ======= GAYA TAMBAHAN UNTUK SHOW MORE & HIDDEN ======= */
+/* Produk tersembunyi default */
 .product.hidden {
   display: none;
 }
 
-#toggle-show:checked ~ .products .product.hidden {
+/* Saat checkbox dicentang, tampilkan produk hidden */
+#toggle-show:checked ~ .product-container .product.hidden {
   display: block;
 }
 
+/* Tombol Show More */
+.show-more-wrapper {
+  text-align: center; /* ⬅️ tombol jadi di tengah */
+}
+
 #show-more {
-  display: inline-block;       /* ✅ Sudah benar: Biar tidak jadi full block */
-  margin: 32px auto;           /* ✅ Sudah benar: Tengah horizontal + jarak atas */
-  padding: 10px 24px;          /* ✅ Sudah benar: Ukuran tombol */
-  background-color: gold;      /* Warna kuning */
+  display: inline-block;   /* ukurannya selebar teks */
+  padding: 6px 14px;       /* padding kecil biar pas */
+  background-color: gold;
   color: black;
   font-weight: bold;
   font-size: 14px;
-  border: none;
   border-radius: 6px;
   cursor: pointer;
-  width: fit-content;          /* ✅ Ukuran pas isi tulisan */
-  text-align: center;
-  max-height: 48px;            /* ✅ Tambahan: batasi tinggi tombol */
-  line-height: normal;         /* ✅ Pastikan tinggi teks wajar */
-  display: block;              /* 🔧 Tambahan: supaya margin auto bekerja penuh */
-  margin-left: auto;           /* 🔧 Tambahan */
-  margin-right: auto;          /* 🔧 Tambahan */
 }
 
+/* Opsional: ubah tampilan saat sudah dibuka */
+#toggle-show:checked ~ .show-more-wrapper #show-more {
+  background-color: gray;
+  color: white;
+}
 
-
-
-/* ======= CONTOH GAYA DASAR UNTUK TAMPILAN ======= */
+/* ======= GAYA DASAR UNTUK TAMPILAN ======= */
 body {
   font-family: sans-serif;
   margin: 0;
@@ -241,8 +241,8 @@ body {
 
 .product-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* ✅ 4 kolom */
-  gap: 0px; /* ✅ Biar produk tidak nempel */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
   padding: 0px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -283,10 +283,6 @@ body {
   font-weight: bold;
 }
 
-.product.hidden {
-  display: none;
-}
-
 .product-link {
   display: block;
   color: inherit;
@@ -298,6 +294,12 @@ body {
   overflow: hidden;
 }
 
+/* ✅ Tambahan */
+.product-link {
+  display: block;        /* supaya seluruh isi bisa diklik */
+  color: inherit;        /* ikuti warna teks asli */
+  text-decoration: none; /* hilangkan garis bawah */
+}
 
 /*kemeja dan lainnya*/
 
@@ -311,55 +313,66 @@ body {
 .detail-container {
   display: flex;
   gap: 40px;
-  padding: 40px;
   max-width: 1200px;
   margin: auto;
 }
 
+/* 🔹 Layout Gambar */
 .product-images {
   flex: 1;
-}
-
-.image-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 10px;
+  grid-template-areas:
+    "main main"
+    "thumb1 thumb2"
+    "thumb3 thumb2"; /* thumb3 ada di bawah thumb1 */
+  gap: 0; /* hilangin jarak antar gambar */
+}
+
+.main-image { grid-area: main; }
+.thumb1 { grid-area: thumb1; }
+.thumb2 { grid-area: thumb2; }
+.thumb3 { grid-area: thumb3; }
+
+.product-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .main-image {
-  grid-column: 1 / 3;
+  grid-area: main;
 }
 
 .main-image img {
   width: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
-  aspect-ratio: 3 / 4;
-  border: 1px solid #eee;
 }
 
-.thumb img {
+/* 🔹 Thumbnail */
+.product-images img:nth-child(2) { grid-area: thumb1; }
+.product-images img:nth-child(3) { grid-area: thumb2; }
+.product-images img:nth-child(4) { grid-area: thumb3; }
+
+.product-images img {
   width: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
-  aspect-ratio: 3 / 4;
-  border: 1px solid #ddd;
-  cursor: pointer;
 }
 
-.thumb.bottom {
-  grid-column: 1 / 3;
-  justify-self: start;
-  width: 50%;
-}
-
+/* 🔹 Info Produk */
 .product-info {
   flex: 1;
 }
 
 .product-info h1 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .product-info .price {
@@ -368,55 +381,69 @@ body {
   margin-bottom: 20px;
 }
 
+/* 🔹 Ukuran sesuai teks */
 .sizes {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 20px;
 }
 
-.sizes button {
-  padding: 10px 15px;
-  border: 1px solid #333;
-  background: white;
-  cursor: pointer;
+.sizes input[type="radio"] {
+  display: none;
 }
 
+.sizes label {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 6px 12px; /* lebih kecil, biar pas dengan teks */
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+  transition: 0.2s;
+  width: auto; /* mengikuti panjang teks */
+}
+
+.sizes input[type="radio"]:checked + label {
+  background: black;
+  color: white;
+}
+
+/* 🔹 Tombol */
 .add-to-cart {
   background: black;
   color: white;
-  padding: 12px;
+  padding: 14px;
   border: none;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   cursor: pointer;
+  font-size: 14px;
+  border-radius: 20px;
 }
 
+/* 🔹 Deskripsi */
 .description {
   font-size: 14px;
   line-height: 1.6;
   color: #333;
 }
 
+/* 🔹 Responsif */
 @media screen and (max-width: 768px) {
   .detail-container {
     flex-direction: column;
   }
-
-  .image-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
+  .product-images {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "main main"
+      "thumb1 thumb2"
+      "thumb3 thumb2";
   }
-
-  .thumb.bottom {
-    width: 100%;
-    justify-self: stretch;
+  .sizes {
+    justify-content: flex-start;
   }
-}
-
-.sizes button.active {
-  background-color: black;
-  color: white;
 }
 
 /*detail*/
