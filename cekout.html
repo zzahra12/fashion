@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembayaran</title>
+  <link rel="stylesheet" href="checkout.css"/>
+</head>
+<body>
+
+<div class="checkout-container">
+  <div class="form-section">
+    <a href="keranjang.html" class="back-link">&larr; Kembali ke tas belanja</a>
+
+    <h2>Informasi Saya</h2>
+    <form>
+      <label>Nama Depan<span class="required">*</span></label>
+      <input type="text" required>
+
+      <label>Nama Belakang<span class="required">*</span></label>
+      <input type="text" required>
+
+      <label>Email<span class="required">*</span></label>
+      <input type="email" required>
+
+      <label>Tanggal Lahir (DD/MM/YYYY)<span class="required">*</span></label>
+      <input type="text" placeholder="01/01/2000" required>
+
+      <h3>Pengiriman</h3>
+      <label>Alamat<span class="required">*</span></label>
+      <input type="text" required>
+
+      <div class="row">
+        <div class="col">
+          <label>Nama Depan<span class="required">*</span></label>
+          <input type="text" required>
+        </div>
+        <div class="col">
+          <label>Nama Belakang<span class="required">*</span></label>
+          <input type="text" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label>Provinsi<span class="required">*</span></label>
+          <input type="text" required>
+        </div>
+        <div class="col">
+          <label>Kota<span class="required">*</span></label>
+          <input type="text" required>
+        </div>
+      </div>
+
+      <label>Kode Pos<span class="required">*</span></label>
+      <input type="text" placeholder="Contoh: 14240" required>
+      <p class="kodepos-note">Masukkan kode pos anda. Contoh: 14240</p>
+
+      <label>Nomor Telepon<span class="required">*</span></label>
+      <input type="text" placeholder="08-XXXX-XXXX" required>
+
+      <h4>Pilih Metode Pengiriman</h4>
+      <label class="shipping-option">
+        <input type="radio" name="shipping" checked> Metode Pengiriman Standar Rp 34.000 (3-6 hari)
+      </label>
+
+      <button type="submit" class="btn-save">SIMPAN</button>
+    </form>
+  </div>
+
+  <div class="summary-section">
+    <h2>Ringkasan Pesanan</h2>
+    <p>Diskon -</p>
+    <p>Jumlah Pesanan <span class="price" id="order-amount">Rp 0</span></p>
+    <p>Biaya Pengiriman <span class="price">Rp 34.000</span></p>
+    <p class="total">TOTAL <span id="total-amount">Rp 0</span></p>
+    <button class="btn-finish">Selesaikan Pembelian</button>
+  </div>
+</div>
+
+<script>
+  let cartTotal = localStorage.getItem("cartTotal") || 149000;
+  let shippingCost = 34000;
+  document.getElementById("order-amount").textContent = "Rp " + Number(cartTotal).toLocaleString("id-ID");
+  let totalAmount = Number(cartTotal) + shippingCost;
+  document.getElementById("total-amount").textContent = "Rp " + totalAmount.toLocaleString("id-ID");
+</script>
+
+</body>
+</html>

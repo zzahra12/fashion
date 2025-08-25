@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Member - ModeKu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="main-header">
+    <div class="left">
+      <div class="logo">
+        <span class="brand">ModeKU</span>
+        <span class="tagline">Your Daily Fashion Guide</span>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html"><strong>WANITA</strong></a>
+      <a href="#">PRIA</a>
+      <a href="#">ANAK-ANAK</a>
+    </nav>
+
+    <div class="icons">
+      <a href="#" title="Cari 🔍">🔍</a>
+      <a href="masuk.html" title="Akun 👤">👤</a>
+      <a href="keranjang.html" title="Keranjang 🛒">🛒</a>
+    </div>
+  </header>
+
+ <main class="register-container">
+    <h1>SAYA MAU MENJADI MEMBER</h1>
+    <p class="desc">
+      Jadilah member – Bergabunglah sekarang dan dapatkan pengalaman belanja istimewa 
+      dengan berbagai keuntungan khusus untuk Anda.
+    </p>
+    <p class="desc">
+      Sudah mempunyai akun online di ModeKu? Silakan masuk menggunakan email anda 
+      yang sudah terdaftar untuk mengaktivasi keanggotaan anda.
+    </p>
+
+    <form action="akun.html" method="POST" class="register-form">
+      <label for="firstname">NAMA DEPAN <span class="required">*</span></label>
+      <input type="text" id="firstname" name="firstname" required>
+
+      <label for="lastname">NAMA TERAKHIR <span class="required">*</span></label>
+      <input type="text" id="lastname" name="lastname" required>
+
+      <label for="email">EMAIL <span class="required">*</span></label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="dob">TANGGAL LAHIR <span class="required">*</span></label>
+      <input type="date" id="dob" name="dob" required>
+
+       <label for="password">SANDI SAAT INI <span class="required">*</span></label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit" class="btn-primary">SAYA MAU MENJADI MEMBER</button>
+      </form>
+
+    <form action="login.html">
+      <button type="submit" class="btn-secondary">MASUK</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 🔗 Menghubungkan file CSS eksternal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- 🔻 HEADER -->
+  <header class="main-header">
+    <div class="left">
+      <div class="logo">
+        <span class="brand">ModeKU</span>
+        <span class="tagline">Your Daily Fashion Guide</span>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html"><strong>WANITA</strong></a>
+      <a href="#">PRIA</a>
+      <a href="#">ANAK-ANAK</a>
+    </nav>
+
+    <div class="icons">
+      <a href="#" title="Cari 🔍">🔍</a>
+      <a href="masuk.html" title="Akun 👤">👤</a>
+      <a href="keranjang.html" title="Keranjang 🛒">🛒</a>
+    </div>
+  </header>
+
+  <div class="cart-container">
+  <h1>Keranjang Belanja</h1>
+  <div id="cart-items"></div>
+  <div class="cart-summary">
+    <p>Total: <span id="total-price">Rp 0</span></p>
+    <button class="checkout-btn">Lanjut ke Pembayaran</button>
+  </div>
+</div>
+
+<!-- HTML Keranjang -->
+<script>
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const cartItemsDiv = document.getElementById('cart-items');
+  let total = 0;
+
+  function renderCart() {
+    cartItemsDiv.innerHTML = '';
+    total = 0;
+
+    if (cart.length === 0) {
+      cartItemsDiv.innerHTML = '<p>Keranjang Anda kosong.</p>';
+    } else {
+      cart.forEach((item, index) => {
+        total += item.price * item.quantity;
+        cartItemsDiv.innerHTML += `
+          <div class="cart-item">
+            <div class="item-image">
+            <img src="${item.image}" alt="${item.name}">
+            </div>
+            <div class="item-details">
+              <p class="item-name">${item.name}</p>
+              <p class="item-size">Ukuran: ${item.size}</p>
+              <p class="item-quantity">Jumlah: ${item.quantity}</p>
+              <p class="item-price">Rp ${item.price.toLocaleString()}</p>
+              <button class="remove-btn" onclick="removeItem(${index})">Hapus</button>
+            </div>
+          </div>
+        `;
+      });
+
+      document.getElementById('total-price').innerText = 'Rp ' + total.toLocaleString();
+    }
+  }
+
+  function removeItem(index) {
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    renderCart();
+  }
+
+  renderCart();
+</script>
+</body>
+</html>
