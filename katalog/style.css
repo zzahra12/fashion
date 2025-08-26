@@ -32,7 +32,7 @@ body {
 
 .tagline {
   font-size: 12px;
-  color: #777;
+  color: red;
 }
 
 /* 🔻 MENU NAV */
@@ -173,6 +173,97 @@ body {
 .telusuri-link:hover {
   text-decoration: underline;
 }
+
+/*footer*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e3d9d0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 50px;
+  background-color: #d6ccc2;
+  color: #000;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;  /* logo + menu sejajar tengah vertikal */
+  gap: 100px;
+}
+
+.logo-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  font-family: "Times New Roman", serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+.tagline {
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #000;
+  margin: 3px 0 0;
+}
+
+.store-links h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.store-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.store-links li {
+  margin-bottom: 5px;
+}
+
+.store-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17x;
+  transition: color 0.3s;
+}
+
+.store-links a:hover {
+  color: #555;
+}
+
+.footer-right {
+  max-width: 450px;
+  font-size: 15px; /* lebih besar dari sebelumnya */
+  line-height: 1.7;
+}
+
+.whatsapp {
+  font-weight: bold;
+  font-size: 16px; /* nomor WhatsApp lebih besar */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  background-color: #d6ccc2;
+  border-top: 1px solid #bbb;
+}
+
 /*halaman depan*/
 
 /* kemeja dan lainnya */
@@ -420,6 +511,17 @@ body {
   cursor: pointer;
   font-size: 14px;
   border-radius: 20px;
+}
+
+.cart-form {
+  margin: 0;         /* hilangkan margin bawaan */
+  padding: 0;        /* hilangkan padding bawaan */
+  width: 100%;       /* biar sama lebar dengan tombol */
+}
+
+.cart-form button {
+  display: block;    /* tombol full baris */
+  width: 100%;       /* tombol full lebar */
 }
 
 /* 🔹 Deskripsi */
