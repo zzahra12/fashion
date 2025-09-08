@@ -31,57 +31,50 @@
     </div>
   </header>
 
-  <div class="cart-container">
-  <h1>Keranjang Belanja</h1>
-  <div id="cart-items"></div>
-  <div class="cart-summary">
-    <p>Total: <span id="total-price">Rp 0</span></p>
-    <button class="checkout-btn">Lanjut ke Pembayaran</button>
+  <!-- Checkbox untuk toggle keranjang -->
+  <input type="checkbox" id="cart-toggle">
+
+  <!-- Tombol buka keranjang -->
+  <label for="cart-toggle" class="open-cart-btn">🛒</label>
+
+  <!-- === PRODUCT GRID === -->
+  <div class="products">
+    <!--
+    ======= TEMPLATE PRODUK =======
+    Salin kode di bawah ini untuk menambah produk baru.
+    <div class="product-card">
+      <img src="URL_GAMBAR_PRODUK" alt="Nama Produk">
+      <h3>Nama Produk</h3>
+      <p>Rp HARGA</p>
+      <input type="checkbox" id="produk1" class="add-checkbox">
+      <label for="produk1" class="add-label">Tambah ke Keranjang</label>
+    </div>
+    =================================
+    -->
   </div>
-</div>
 
-<!-- HTML Keranjang -->
-<script>
-  let cart = JSON.parse(localStorage.getItem('cart')) || [];
-  const cartItemsDiv = document.getElementById('cart-items');
-  let total = 0;
+  <!-- === CART SIDEBAR === -->
+  <div class="cart-sidebar">
+    <label for="cart-toggle" class="close-btn">×</label>
+    <h2>Keranjang</h2>
 
-  function renderCart() {
-    cartItemsDiv.innerHTML = '';
-    total = 0;
+    <div class="cart-items">
+      <!-- Contoh item di dalam keranjang (static/manual) -->
+      <!--
+      <div class="cart-item">
+        <img src="URL_GAMBAR_PRODUK" alt="Nama Produk">
+        <div class="cart-item-info">
+          <h4>Nama Produk</h4>
+          <p>Rp HARGA</p>
+        </div>
+      </div>
+      -->
+      <p style="text-align:center; color:#999;">Keranjang masih kosong</p>
+    </div>
 
-    if (cart.length === 0) {
-      cartItemsDiv.innerHTML = '<p>Keranjang Anda kosong.</p>';
-    } else {
-      cart.forEach((item, index) => {
-        total += item.price * item.quantity;
-        cartItemsDiv.innerHTML += `
-          <div class="cart-item">
-            <div class="item-image">
-            <img src="${item.image}" alt="${item.name}">
-            </div>
-            <div class="item-details">
-              <p class="item-name">${item.name}</p>
-              <p class="item-size">Ukuran: ${item.size}</p>
-              <p class="item-quantity">Jumlah: ${item.quantity}</p>
-              <p class="item-price">Rp ${item.price.toLocaleString()}</p>
-              <button class="remove-btn" onclick="removeItem(${index})">Hapus</button>
-            </div>
-          </div>
-        `;
-      });
-
-      document.getElementById('total-price').innerText = 'Rp ' + total.toLocaleString();
-    }
-  }
-
-  function removeItem(index) {
-    cart.splice(index, 1);
-    localStorage.setItem('cart', JSON.stringify(cart));
-    renderCart();
-  }
-
-  renderCart();
-</script>
+    <div class="cart-footer">
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
 </body>
 </html>
