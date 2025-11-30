@@ -1,5 +1,8 @@
 <?php include 'component/bilboard.php'; ?>
 
+<div class="hero">
+  <!-- 🔻 Gambar Hero -->
+  <img src="../gambar/wanita2.jpg" alt="Mode Fashion" class="hero-img">
 <!-- 🔻 KOLEKSI -->
 <section class="section">
   <!-- 🏷️ JUDUL KOLEKSI -->

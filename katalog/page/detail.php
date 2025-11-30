@@ -1,18 +1,15 @@
-<div class="detail-container">
-  <!-- Bagian gambar -->
-  <div class="product-images">
+<div class="product-images">
+
   <div class="main-image">
-    <img src="../gambar/KW1.1.jpg" alt="Gambar utama">
+    <img src="../../gambar/KW1.1.jpg" alt="">
   </div>
-  <div class="thumb thumb1">
-    <img src="../gambar/KW1.2.jpg" alt="Thumbnail 1">
+
+  <div class="thumbs">
+    <div class="thumb"><img src="../../gambar/KW1.2.jpg"></div>
+    <div class="thumb"><img src="../../gambar/KW1.3.jpg"></div>
+    <div class="thumb"><img src="../../gambar/KW1.4.jpg"></div>
   </div>
-  <div class="thumb thumb2">
-    <img src="../gambar/KW1.3.jpg" alt="Thumbnail 2">
-  </div>
-  <div class="thumb thumb3">
-    <img src="../gambar/KW1.4.jpg" alt="Thumbnail 3">
-  </div>
+
 </div>
 
   <!-- Bagian info produk -->

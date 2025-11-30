@@ -582,6 +582,55 @@ body {
   }
 }
 
+
+/*tambah
+/* Container utama agar gambar & info sejajar */
+.detail-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Bagian gambar */
+.product-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Gambar utama */
+.main-image img {
+  width: 350px;      /* Sesuaikan ukuran */
+  height: auto;
+  display: block;
+}
+
+/* Thumbnail container (berjejer) */
+.thumbs {
+  display: flex;
+  gap: 10px;
+}
+
+/* Thumbnail */
+.thumb img {
+  width: 70px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 3px;
+  transition: 0.2s;
+}
+
+.thumb img:hover {
+  opacity: 0.7;
+}
+
+/* Bagian informasi produk di kanan */
+.product-info {
+  max-width: 400px;
+}
+
 /*detail*/
 
 /*keranjang*/
