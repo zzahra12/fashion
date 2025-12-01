@@ -6,7 +6,7 @@
 <div class="product-container">
   <!-- Produk 1 -->
   <div class="product">
-    <a href="kw1.html" class="product-link">
+    <a href="?page=detail&id=1">
     <div class="image-wrapper">
       <img src="../gambar/KW1.1.jpg" alt="T-Shirt Mini Garis" />
     </div>

@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kemeja & Lebih Banyak - ModeKu</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- 🔻 HEADER -->
-<header class="main-header">
-    <div class="left">
-      <div class="logo">
-        <span class="brand">ModeKU</span>
-        <span class="tagline">Your Daily Fashion Guide</span>
-      </div>
-    </div>
-
-    <nav class="menu">
-      <a href="index.html" class="active">WANITA</a>
-      <a href="#">PRIA</a>
-      <a href="#">ANAK-ANAK</a>
-    </nav>
-
-    <div class="icons">
-      <a href="#" title="Cari 🔍">🔍</a>
-      <a href="masuk.html" title="Akun 👤">👤</a>
-      <a href="keranjang.html" title="Keranjang 🛒">🛒</a>
-    </div>
-</header>
-
 <h2>KEMEJA & LEBIH BANYAK</h2>
 
 <!-- ✅ Checkbox Trigger -->
@@ -250,6 +218,3 @@
 <div class="show-more-wrapper">
   <label for="toggle-show" id="show-more">SHOW ALL</label>
 </div>
-
-</body>
-</html>

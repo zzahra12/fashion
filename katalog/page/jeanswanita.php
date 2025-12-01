@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kemeja & Lebih Banyak - ModeKu</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- 🔻 HEADER -->
-<header class="main-header">
-    <div class="left">
-      <div class="logo">
-        <span class="brand">ModeKU</span>
-        <span class="tagline">Your Daily Fashion Guide</span>
-      </div>
-    </div>
-
-    <nav class="menu">
-      <a href="index.html" class="active">WANITA</a>
-      <a href="#">PRIA</a>
-      <a href="#">ANAK-ANAK</a>
-    </nav>
-
-    <div class="icons">
-      <a href="#" title="Cari 🔍">🔍</a>
-      <a href="masuk.html" title="Akun 👤">👤</a>
-      <a href="keranjang.html" title="Keranjang 🛒">🛒</a>
-    </div>
-</header>
-
 <h2>KEMEJA & LEBIH BANYAK</h2>
 
 <!-- ✅ Checkbox Trigger -->
@@ -40,7 +8,7 @@
   <div class="product">
     <a href="kw1.html" class="product-link">
     <div class="image-wrapper">
-      <img src="../gambar/SW1.1.jpg" alt="T-Shirt Mini Garis" />
+      <img src="../gambar/JW1.1.jpg" alt="T-Shirt Mini Garis" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
@@ -54,7 +22,7 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW2.1.jpg" alt="Blouse Floral" />
+      <img src="../gambar/JW2.1.jpg" alt="Blouse Floral" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
@@ -67,7 +35,7 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW3.1.jpg" alt="Kemeja Polos" />
+      <img src="../gambar/JW3.1.jpg" alt="Kemeja Polos" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
@@ -80,7 +48,7 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW4.1.jpg" alt="Tunik Casual" />
+      <img src="../gambar/JW4.1.jpg" alt="Tunik Casual" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
@@ -93,7 +61,7 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW5.1.jpg" alt="Cardigan Panjang" />
+      <img src="../gambar/CW1.1.jpg" alt="Cardigan Panjang" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
@@ -106,7 +74,7 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW6.1.jpg" alt="Sweater Rajut" />
+      <img src="../gambar/CW2.1.jpg" alt="Sweater Rajut" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
@@ -119,7 +87,7 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW7.1.jpg" alt="Kaos Oversize" />
+      <img src="../gambar/CW3.1.jpg" alt="Kaos Oversize" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS–L</p>
@@ -132,7 +100,7 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW8.1.jpg" alt="Hoodie Basic" />
+      <img src="../gambar/CW4.1.jpg" alt="Hoodie Basic" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, All Size</p>
@@ -145,7 +113,7 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW1.1.jpg" alt="Blouse Stylish" />
+      <img src="gambar/KW9.1.jpg" alt="Blouse Stylish" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS–3XL</p>
@@ -158,7 +126,7 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW2.1.jpg" alt="Kemeja Putih" />
+      <img src="gambar/KW10.1.jpg" alt="Kemeja Putih" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, S–XL</p>
@@ -171,7 +139,7 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW3.1.jpg" alt="Tunik Hitam" />
+      <img src="gambar/KW11.1.jpg" alt="Tunik Hitam" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, M–XXL</p>
@@ -184,7 +152,7 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW4.1.jpg" alt="Cardigan Abu" />
+      <img src="gambar/KW12.1.jpg" alt="Cardigan Abu" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, All Size</p>
@@ -197,7 +165,7 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW5.1.jpg" alt="Sweater Crop" />
+      <img src="gambar/KW13.1.jpg" alt="Sweater Crop" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, S–L</p>
@@ -210,7 +178,7 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW6.1.jpg" alt="Blazer Formal" />
+      <img src="gambar/KW14.1.jpg" alt="Blazer Formal" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, S–XL</p>
@@ -223,7 +191,7 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW7.1.jpg" alt="Kaos Polos" />
+      <img src="gambar/KW15.1.jpg" alt="Kaos Polos" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS–L</p>
@@ -236,7 +204,7 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW8.1.jpg" alt="Hoodie Oversize" />
+      <img src="gambar/KW16.1.jpg" alt="Hoodie Oversize" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, All Size</p>
@@ -250,6 +218,3 @@
 <div class="show-more-wrapper">
   <label for="toggle-show" id="show-more">SHOW ALL</label>
 </div>
-
-</body>
-</html>

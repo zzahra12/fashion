@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kemeja & Lebih Banyak - ModeKu</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- 🔻 HEADER -->
-<header class="main-header">
-    <div class="left">
-      <div class="logo">
-        <span class="brand">ModeKU</span>
-        <span class="tagline">Your Daily Fashion Guide</span>
-      </div>
-    </div>
-
-    <nav class="menu">
-      <a href="index.html" class="active">WANITA</a>
-      <a href="#">PRIA</a>
-      <a href="#">ANAK-ANAK</a>
-    </nav>
-
-    <div class="icons">
-      <a href="#" title="Cari 🔍">🔍</a>
-      <a href="masuk.html" title="Akun 👤">👤</a>
-      <a href="keranjang.html" title="Keranjang 🛒">🛒</a>
-    </div>
-</header>
-
 <h2>KEMEJA & LEBIH BANYAK</h2>
 
 <!-- ✅ Checkbox Trigger -->
@@ -40,11 +8,11 @@
   <div class="product">
     <a href="kw1.html" class="product-link">
     <div class="image-wrapper">
-      <img src="../gambar/SW1.1.jpg" alt="T-Shirt Mini Garis" />
+      <img src="../gambar/GW1.1.jpg" alt="T-Shirt Mini Garis" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
-      <p class="name">JEANS STRAIGHT ANKLE HIGH WAIST</p>
+      <p class="name">GAUN BERTALI DENGAN DETAIL SMOCKING</p>
       <p class="price">Rp 179.000</p>
     </div>
     </a>
@@ -54,11 +22,11 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW2.1.jpg" alt="Blouse Floral" />
+      <img src="../gambar/GW2.1.jpg" alt="Blouse Floral" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
-      <p class="name">JEANS HIGH BAGGY</p>
+      <p class="name">Gaun ber straps dengan appliqué</p>
       <p class="price">Rp 129.000</p>
     </div>
   </div>
@@ -67,11 +35,11 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW3.1.jpg" alt="Kemeja Polos" />
+      <img src="../gambar/GW3.1.jpg" alt="Kemeja Polos" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
-      <p class="name">JEANS WIDE REGULAR</p>
+      <p class="name">Gaun crêpe dengan sabuk ikat</p>
       <p class="price">Rp 199.000</p>
     </div>
   </div>
@@ -80,11 +48,11 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW4.1.jpg" alt="Tunik Casual" />
+      <img src="../gambar/GW4.1.jpg" alt="Tunik Casual" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
-      <p class="name">JEANS WIDE REGULAR</p>
+      <p class="name">Gaun kemeja linen</p>
       <p class="price">Rp 149.000</p>
     </div>
   </div>
@@ -93,11 +61,11 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW5.1.jpg" alt="Cardigan Panjang" />
+      <img src="../gambar/GW5.1.jpg" alt="Cardigan Panjang" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
-      <p class="name">CELANA WIDE TWILL</p>
+      <p class="name">GAUN PENDEK POPELIN BUNGA</p>
       <p class="price">Rp 135.000</p>
     </div>
   </div>
@@ -106,11 +74,11 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW6.1.jpg" alt="Sweater Rajut" />
+      <img src="../gambar/GW6.1.jpg" alt="Sweater Rajut" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS-2XL</p>
-      <p class="name">CELANA PANJANG BAHAN JATUH SABUK</p>
+      <p class="name">GAUN PANJANG DENIM ZW COLLECTION</p>
       <p class="price">Rp 109.000</p>
     </div>
   </div>
@@ -119,11 +87,11 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW7.1.jpg" alt="Kaos Oversize" />
+      <img src="../gambar/GW7.1.jpg" alt="Kaos Oversize" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS–L</p>
-      <p class="name">CELANA CARGO KANVAS</p>
+      <p class="name">GAUN PENDEK SATIN HALTER</p>
       <p class="price">Rp 149.000</p>
     </div>
   </div>
@@ -132,11 +100,11 @@
   <div class="product">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW8.1.jpg" alt="Hoodie Basic" />
+      <img src="../gambar/GW8.1.jpg" alt="Hoodie Basic" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, All Size</p>
-      <p class="name">LENGGING JERSEY KATUN</p>
+      <p class="name">GAUN MIDI POPELIN ZW COLLECTION</p>
       <p class="price">Rp 159.000</p>
     </div>
   </div>
@@ -145,11 +113,11 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW1.1.jpg" alt="Blouse Stylish" />
+      <img src="../gambar/GW1.1.jpg" alt="Blouse Stylish" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS–3XL</p>
-      <p class="name">BLOUSE STYLISH</p>
+      <p class="name">GAUN BERTALI DENGAN DETAIL SMOCKING</p>
       <p class="price">Rp 139.000</p>
     </div>
   </div>
@@ -158,11 +126,11 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW2.1.jpg" alt="Kemeja Putih" />
+      <img src="../gambar/GW2.1.jpg" alt="Kemeja Putih" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, S–XL</p>
-      <p class="name">KEMEJA PUTIH</p>
+      <p class="name">Gaun ber straps dengan appliqué</p>
       <p class="price">Rp 159.000</p>
     </div>
   </div>
@@ -171,11 +139,11 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW3.1.jpg" alt="Tunik Hitam" />
+      <img src="../gambar/GW3.1.jpg" alt="Tunik Hitam" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, M–XXL</p>
-      <p class="name">TUNIK HITAM</p>
+      <p class="name">Gaun crêpe dengan sabuk ikat</p>
       <p class="price">Rp 179.000</p>
     </div>
   </div>
@@ -184,11 +152,11 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW4.1.jpg" alt="Cardigan Abu" />
+      <img src="../gambar/GW4.1.jpg" alt="Cardigan Abu" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, All Size</p>
-      <p class="name">CARDIGAN ABU</p>
+      <p class="name">Gaun kemeja linen</p>
       <p class="price">Rp 199.000</p>
     </div>
   </div>
@@ -197,11 +165,11 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW5.1.jpg" alt="Sweater Crop" />
+      <img src="../gambar/GW5.1.jpg" alt="Sweater Crop" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, S–L</p>
-      <p class="name">SWEATER CROP</p>
+      <p class="name">GAUN PENDEK POPELIN BUNGA</p>
       <p class="price">Rp 189.000</p>
     </div>
   </div>
@@ -210,11 +178,11 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW6.1.jpg" alt="Blazer Formal" />
+      <img src="../gambar/GW6.1.jpg" alt="Blazer Formal" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, S–XL</p>
-      <p class="name">BLAZER FORMAL</p>
+      <p class="name">GAUN PANJANG DENIM ZW COLLECTION</p>
       <p class="price">Rp 249.000</p>
     </div>
   </div>
@@ -223,11 +191,11 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW7.1.jpg" alt="Kaos Polos" />
+      <img src="../gambar/GW7.1.jpg" alt="Kaos Polos" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, XS–L</p>
-      <p class="name">KAOS POLOS</p>
+      <p class="name">GAUN PENDEK SATIN HALTER</p>
       <p class="price">Rp 99.000</p>
     </div>
   </div>
@@ -236,11 +204,11 @@
   <div class="product hidden">
     <a href="kw1.html" class="product-link"></a>
     <div class="image-wrapper">
-      <img src="../gambar/SW8.1.jpg" alt="Hoodie Oversize" />
+      <img src="../gambar/GW8.1.jpg" alt="Hoodie Oversize" />
     </div>
     <div class="product-info">
       <p class="size">WANITA, All Size</p>
-      <p class="name">HOODIE OVERSIZE</p>
+      <p class="name">GAUN MIDI POPELIN ZW COLLECTION</p>
       <p class="price">Rp 219.000</p>
     </div>
   </div>
@@ -250,6 +218,3 @@
 <div class="show-more-wrapper">
   <label for="toggle-show" id="show-more">SHOW ALL</label>
 </div>
-
-</body>
-</html>
