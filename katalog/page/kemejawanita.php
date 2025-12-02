@@ -20,7 +20,7 @@
 
   <!-- Produk 2 -->
   <div class="product">
-    <a href="kw2.html" class="product-link">
+    <a href="?page=detail&id=1">
     <div class="image-wrapper">
       <img src="../gambar/KW2.1.jpg" alt="Blouse Floral" />
     </div>

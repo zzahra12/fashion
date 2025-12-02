@@ -41,11 +41,19 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="?page=genre" aria-expanded="false">
-                <i class="ti ti-typography"></i>
-             <span class="hide-menu">Input Genre</span>
-             </a>
-              </li>
+              <a class="sidebar-link" href="../../../routes/web.php?page=genre&action=create">
+                 <i class="ti ti-typography"></i>
+                  <span class="hide-menu">Input Genre</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="?page=genre&action=index" aria-expanded="false">
+                <i class="ti ti-color-swatch"></i>
+                <span class="hide-menu">Tampil Genre</span>
+              </a>
+            </li>
+
+
 
             <!-- ---------------------------------- -->
             <!-- Dashboard -->

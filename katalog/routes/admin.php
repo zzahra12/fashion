@@ -1,20 +1,40 @@
 <?php
-// baca value dari $_GET['page'] dan masukkan ke var $page
-$page = $_GET['page'] ?? 'dashboard';
+// ambil nilai page dan action yang dikirimkan URL
+$page   = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
+$action = isset($_GET['action']) ? $_GET['action'] : 'index';
 
-// routing untuk panel admin
-// lihat apakah nilai dari $page sesuai dengan salah satu case di bawah
+// load semua controller yang dibutuhkan
+require_once 'controller/GenreController.php';
+
 switch ($page) {
 
     case 'dashboard':
-        include "page/index.php";
+        include 'page/admin/dashboard/index.php';
         break;
 
+    // ============================
+    // ROUTING GENRE (PART 2)
+    // ============================
     case 'genre':
-        include "page/input_genre.php";
+        $genre = new GenreController();
+
+        if ($action == 'create') {
+            // tampilkan form input genre
+            $genre->create();
+
+        } elseif ($action == 'store') {
+            // proses simpan data genre
+            $genre->store();
+
+        } else {
+            // tampilkan daftar genre
+            $genre->index();
+        }
         break;
 
+    // jika tidak ditemukan
     default:
         echo "Halaman tidak ditemukan";
+        break;
 }
 ?>

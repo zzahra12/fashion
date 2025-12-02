@@ -1,14 +1,23 @@
-<?php 
-    
-    require_once('config/Database.php');
-    require_once('model/models.php');
-    require_once('controller/controllers.php');
+<?php
+$page = isset($_GET['page']) ? $_GET['page'] : 'dashboard';
+$action = isset($_GET['action']) ? $_GET['action'] : 'index';
 
-    $genre = new GenreController();
+if ($page == 'genre') {
 
-    $page = isset($_GET['page']) ? $_GET['page'] : 'home';
+    if ($action == 'create') {
+        include '../page/admin/admin-page/input_genre.php';
+    }
 
-            if($page == 'home') { include "page/home.php"; }
-            else if ($page == 'shopall') { include "page/shop-all.php"; }
-            else if ($page == 'detail') { include "page/detail.php"; }
-            else if($page == 'admin') { include "page/admin/index.php"; }
+    elseif ($action == 'store') {
+        include '../page/admin/admin-page/store_genre.php';
+    }
+
+    elseif ($action == 'index') {
+        include '../page/admin/admin-page/list_genre.php';
+    }
+
+    else {
+        echo "<h3>Halaman Tidak Ditemukan</h3>";
+    }
+}
+?>
